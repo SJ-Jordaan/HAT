@@ -1,0 +1,6 @@
+    0 -> 1[label="<none;req_r1;req_r3;idle;req_r7;req_r8>"]
+    1 -> 2[label="<none;req_r1;req_r3;idle;req_r5;req_r8>"]
+    2 -> 3[label="<none;req_r1;req_r3;idle;idle;req_r8>"]
+    2 -> 1[label="<none;req_r1;req_r3;idle;idle;req_r8>"]
+    3 -> 4[label="<none;req_r1;req_r3;idle;req_r5;req_r6>"]
+    0 -> 4[label="<none;req_r1;req_r3;idle;req_r5;req_r6>"]

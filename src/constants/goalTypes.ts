@@ -1,0 +1,3 @@
+export const GOAL_TYPES = {
+  ONCE_OFF_ORDERED_GOAL: 'ONCE_OFF_ORDERED_GOAL'
+}
