@@ -1,0 +1,271 @@
+Semantics = SingleAssignment;
+
+Agent Environment
+	Vars:
+		r1: {none,a3};
+		r2: {none,a2,a3};
+		r3: {none,a3};
+		r4: {none,a1,a4};
+		r6: {none,a2,a3};
+		r7: {none,a2,a3};
+		r8: {none,a3};
+	end Vars
+	Actions = {none};
+	Protocol:
+		Other: {none};
+	end Protocol
+	Evolution:
+		r1 = a3 if (r1=none and a3.Action=req_r1);
+		r1 = none if (r1 = a3 and a3.Action = rel_r1);
+		r1 = none if (r1 = a3 and a3.Action = relall);
+
+		r2 = a2 if (r2=none and a2.Action=req_r2 and !(a3.Action=req_r2));
+		r2 = none if (r2 = a2 and a2.Action = rel_r2);
+		r2 = none if (r2 = a2 and a2.Action = relall);
+
+		r2 = a3 if (r2=none and a3.Action=req_r2 and !(a2.Action=req_r2));
+		r2 = none if (r2 = a3 and a3.Action = rel_r2);
+		r2 = none if (r2 = a3 and a3.Action = relall);
+
+		r3 = a3 if (r3=none and a3.Action=req_r3);
+		r3 = none if (r3 = a3 and a3.Action = rel_r3);
+		r3 = none if (r3 = a3 and a3.Action = relall);
+
+		r4 = a1 if (r4=none and a1.Action=req_r4 and !(a4.Action=req_r4));
+		r4 = none if (r4 = a1 and a1.Action = rel_r4);
+		r4 = none if (r4 = a1 and a1.Action = relall);
+
+		r4 = a4 if (r4=none and a4.Action=req_r4 and !(a1.Action=req_r4));
+		r4 = none if (r4 = a4 and a4.Action = rel_r4);
+		r4 = none if (r4 = a4 and a4.Action = relall);
+
+		r6 = a2 if (r6=none and a2.Action=req_r6 and !(a3.Action=req_r6));
+		r6 = none if (r6 = a2 and a2.Action = rel_r6);
+		r6 = none if (r6 = a2 and a2.Action = relall);
+
+		r6 = a3 if (r6=none and a3.Action=req_r6 and !(a2.Action=req_r6));
+		r6 = none if (r6 = a3 and a3.Action = rel_r6);
+		r6 = none if (r6 = a3 and a3.Action = relall);
+
+		r7 = a2 if (r7=none and a2.Action=req_r7 and !(a3.Action=req_r7));
+		r7 = none if (r7 = a2 and a2.Action = rel_r7);
+		r7 = none if (r7 = a2 and a2.Action = relall);
+
+		r7 = a3 if (r7=none and a3.Action=req_r7 and !(a2.Action=req_r7));
+		r7 = none if (r7 = a3 and a3.Action = rel_r7);
+		r7 = none if (r7 = a3 and a3.Action = relall);
+
+		r8 = a3 if (r8=none and a3.Action=req_r8);
+		r8 = none if (r8 = a3 and a3.Action = rel_r8);
+		r8 = none if (r8 = a3 and a3.Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a1
+	Lobsvars = {r4};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r4,rel_r4,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a1 : {rel_r4};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a4.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a2
+	Lobsvars = {r6,r7,r2};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r6,rel_r6,req_r7,rel_r7,req_r2,rel_r2,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a2 : {rel_r6};
+		rem > 0 and Environment.r7 = none : {req_r7};
+		rem > 0 and Environment.r7 = a2 : {rel_r7};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a2 : {rel_r2};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a3.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r7 and Environment.r7 = none and !(a3.Action=req_r7));
+		rem = rem + 1 if (Action = rel_r7);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a3.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a3
+	Lobsvars = {r1,r6,r7,r3,r8,r2};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r1,rel_r1,req_r6,rel_r6,req_r7,rel_r7,req_r3,rel_r3,req_r8,rel_r8,req_r2,rel_r2,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a3 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a3 : {rel_r6};
+		rem > 0 and Environment.r7 = none : {req_r7};
+		rem > 0 and Environment.r7 = a3 : {rel_r7};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a3 : {rel_r3};
+		rem > 0 and Environment.r8 = none : {req_r8};
+		rem > 0 and Environment.r8 = a3 : {rel_r8};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a3 : {rel_r2};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none);
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a2.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r7 and Environment.r7 = none and !(a2.Action=req_r7));
+		rem = rem + 1 if (Action = rel_r7);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none);
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r8 and Environment.r8 = none);
+		rem = rem + 1 if (Action = rel_r8);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a2.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a4
+	Lobsvars = {r4};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r4,rel_r4,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a4 : {rel_r4};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Evaluation
+	init if (
+		Environment.r1 = none and
+		Environment.r2 = none and
+		Environment.r3 = none and
+		Environment.r4 = none and
+		Environment.r6 = none and
+		Environment.r7 = none and
+		Environment.r8 = none and
+		a1.rem = 1 and
+		a2.rem = 1 and
+		a3.rem = 1 and
+		a4.rem = 1
+	);
+	a1_eat if (a1.rem = 0);
+	a2_eat if (a2.rem = 0);
+	a3_eat if (a3.rem = 0);
+	a4_eat if (a4.rem = 0);
+end Evaluation
+
+InitStates
+	Environment.r1 = none and
+	Environment.r2 = none and
+	Environment.r3 = none and
+	Environment.r4 = none and
+	Environment.r6 = none and
+	Environment.r7 = none and
+	Environment.r8 = none and
+	a1.rem = 1 and
+	a2.rem = 1 and
+	a3.rem = 1 and
+	a4.rem = 1;
+end InitStates
+
+Groups
+	all = {a4, a1, a3};
+end Groups
+
+Formulae
+	-- All at once
+	<all>F (a1_eat);
+	<all>F (a3_eat);
+	<all>F (a4_eat);
+	<all>F (a1_eat and a3_eat);
+	<all>F (a1_eat and a4_eat);
+	<all>F (a3_eat and a4_eat);
+	<all>F (a1_eat and a3_eat and a4_eat);
+	-- Once-off ordered goal
+	<all>F (a1_eat and <all>F (a3_eat));
+	<all>F (a1_eat and <all>F (a4_eat));
+	<all>F (a3_eat and <all>F (a4_eat));
+	<all>F (a1_eat and <all>F (a3_eat and <all>F (a4_eat)));
+	<all>F (a1_eat and <all>F (a4_eat and <all>F (a3_eat)));
+	<all>F (a3_eat and <all>F (a1_eat and <all>F (a4_eat)));
+	<all>F (a3_eat and <all>F (a4_eat and <all>F (a1_eat)));
+	<all>F (a4_eat and <all>F (a1_eat and <all>F (a3_eat)));
+	<all>F (a4_eat and <all>F (a3_eat and <all>F (a1_eat)));
+	-- Infinitely often ordered goal
+	--<all>F (a1_eat and <all>F (a3_eat and <all>F (a4_eat and <all>F (init))));
+	--<all>F (a1_eat and <all>F (a4_eat and <all>F (a3_eat and <all>F (init))));
+	--<all>F (a3_eat and <all>F (a1_eat and <all>F (a4_eat and <all>F (init))));
+	--<all>F (a3_eat and <all>F (a4_eat and <all>F (a1_eat and <all>F (init))));
+	--<all>F (a4_eat and <all>F (a1_eat and <all>F (a3_eat and <all>F (init))));
+	--<all>F (a4_eat and <all>F (a3_eat and <all>F (a1_eat and <all>F (init))));
+end Formulae
+
+-- =================================================================
+-- Output from running the model checker
+-- =================================================================
+	--Formula number 1: (<all>F a1_eat), is TRUE in the model
+  --Formula number 2: (<all>F a3_eat), is TRUE in the model
+  --Formula number 3: (<all>F a4_eat), is TRUE in the model
+  --Formula number 4: (<all>F (a1_eat && a3_eat)), is TRUE in the model
+  --Formula number 5: (<all>F (a1_eat && a4_eat)), is FALSE in the model
+  --Formula number 6: (<all>F (a3_eat && a4_eat)), is TRUE in the model
+  --Formula number 7: (<all>F ((a1_eat && a3_eat) && a4_eat)), is FALSE in the model
+  --Formula number 8: (<all>F (a1_eat && (<all>F a3_eat))), is TRUE in the model
+  --Formula number 9: (<all>F (a1_eat && (<all>F a4_eat))), is TRUE in the model
+  --Formula number 10: (<all>F (a3_eat && (<all>F a4_eat))), is TRUE in the model
+  --Formula number 11: (<all>F (a1_eat && (<all>F (a3_eat && (<all>F a4_eat))))), is TRUE in the model
+  --Formula number 12: (<all>F (a1_eat && (<all>F (a4_eat && (<all>F a3_eat))))), is TRUE in the model
+  --Formula number 13: (<all>F (a3_eat && (<all>F (a1_eat && (<all>F a4_eat))))), is TRUE in the model
+  --Formula number 14: (<all>F (a3_eat && (<all>F (a4_eat && (<all>F a1_eat))))), is TRUE in the model
+  --Formula number 15: (<all>F (a4_eat && (<all>F (a1_eat && (<all>F a3_eat))))), is TRUE in the model
+  --Formula number 16: (<all>F (a4_eat && (<all>F (a3_eat && (<all>F a1_eat))))), is TRUE in the model

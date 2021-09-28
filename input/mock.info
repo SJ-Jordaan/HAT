@@ -9,21 +9,21 @@
     r7=none
     r8=none
   Agent a1
-    rem=2
+    rem=1
   Agent a2
-    rem=2
+    rem=1
   Agent a3
     rem=1
   Agent a4
-    rem=1
+    rem=2
   Agent a5
     rem=2
 
 -- State 1 --
   Agent Environment
-    r1=a1
+    r1=none
     r2=none
-    r3=a2
+    r3=none
     r4=none
     r5=none
     r6=none
@@ -42,11 +42,11 @@
 
 -- State 2 --
   Agent Environment
-    r1=a1
+    r1=none
     r2=none
-    r3=a2
+    r3=none
     r4=none
-    r5=a4
+    r5=none
     r6=none
     r7=none
     r8=a5
@@ -59,13 +59,13 @@
   Agent a4
     rem=0
   Agent a5
-    rem=1
+    rem=0
 
 -- State 3 --
   Agent Environment
-    r1=a1
+    r1=none
     r2=none
-    r3=a2
+    r3=none
     r4=none
     r5=none
     r6=none
@@ -80,7 +80,7 @@
   Agent a4
     rem=1
   Agent a5
-    rem=1
+    rem=2
 
 -- State 4 --
   Agent Environment

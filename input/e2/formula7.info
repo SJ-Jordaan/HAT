@@ -1,0 +1,18 @@
+-- State 0 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+

@@ -1,0 +1,6 @@
+Average, Max, Min for Blind DFS (Best case)
+0.2357 0.53 0.17
+Average, Max, Min for Heuristic V1 DFS
+0.3981 1.07 0.26
+Average, Max, Min for Blind DFS (worst)
+0.2428 0.48 0.19

@@ -1,0 +1,1179 @@
+Semantics = SingleAssignment;
+
+Agent Environment
+	Vars:
+		r1: {none,a1,a10,a11,a12,a14,a15,a16,a18,a2,a20,a5,a6,a9};
+		r2: {none,a1,a10,a11,a12,a13,a15,a17,a18,a19,a20,a5,a7,a8,a9};
+		r3: {none,a1,a10,a11,a12,a13,a15,a17,a19,a2,a3,a4,a5,a7,a8,a9};
+		r4: {none,a1,a11,a12,a15,a17,a18,a2,a20,a5,a8,a9};
+		r5: {none,a1,a10,a11,a12,a14,a15,a16,a18,a2,a20,a3,a4,a5,a8,a9};
+		r6: {none,a1,a10,a11,a12,a13,a18,a19,a2,a20,a5,a6,a7,a8,a9};
+	end Vars
+	Actions = {none};
+	Protocol:
+		Other: {none};
+	end Protocol
+	Evolution:
+		r1 = a1 if (r1=none and a1.Action=req_r1 and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a1 and a1.Action = rel_r1);
+		r1 = none if (r1 = a1 and a1.Action = relall);
+
+		r1 = a10 if (r1=none and a10.Action=req_r1 and !(a1.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a10 and a10.Action = rel_r1);
+		r1 = none if (r1 = a10 and a10.Action = relall);
+
+		r1 = a11 if (r1=none and a11.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a11 and a11.Action = rel_r1);
+		r1 = none if (r1 = a11 and a11.Action = relall);
+
+		r1 = a12 if (r1=none and a12.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a12 and a12.Action = rel_r1);
+		r1 = none if (r1 = a12 and a12.Action = relall);
+
+		r1 = a14 if (r1=none and a14.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a14 and a14.Action = rel_r1);
+		r1 = none if (r1 = a14 and a14.Action = relall);
+
+		r1 = a15 if (r1=none and a15.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a15 and a15.Action = rel_r1);
+		r1 = none if (r1 = a15 and a15.Action = relall);
+
+		r1 = a16 if (r1=none and a16.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a16 and a16.Action = rel_r1);
+		r1 = none if (r1 = a16 and a16.Action = relall);
+
+		r1 = a18 if (r1=none and a18.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a18 and a18.Action = rel_r1);
+		r1 = none if (r1 = a18 and a18.Action = relall);
+
+		r1 = a2 if (r1=none and a2.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a2 and a2.Action = rel_r1);
+		r1 = none if (r1 = a2 and a2.Action = relall);
+
+		r1 = a20 if (r1=none and a20.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a20 and a20.Action = rel_r1);
+		r1 = none if (r1 = a20 and a20.Action = relall);
+
+		r1 = a5 if (r1=none and a5.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a5 and a5.Action = rel_r1);
+		r1 = none if (r1 = a5 and a5.Action = relall);
+
+		r1 = a6 if (r1=none and a6.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a9.Action=req_r1));
+		r1 = none if (r1 = a6 and a6.Action = rel_r1);
+		r1 = none if (r1 = a6 and a6.Action = relall);
+
+		r1 = a9 if (r1=none and a9.Action=req_r1 and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1));
+		r1 = none if (r1 = a9 and a9.Action = rel_r1);
+		r1 = none if (r1 = a9 and a9.Action = relall);
+
+		r2 = a1 if (r2=none and a1.Action=req_r2 and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a1 and a1.Action = rel_r2);
+		r2 = none if (r2 = a1 and a1.Action = relall);
+
+		r2 = a10 if (r2=none and a10.Action=req_r2 and !(a1.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a10 and a10.Action = rel_r2);
+		r2 = none if (r2 = a10 and a10.Action = relall);
+
+		r2 = a11 if (r2=none and a11.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a11 and a11.Action = rel_r2);
+		r2 = none if (r2 = a11 and a11.Action = relall);
+
+		r2 = a12 if (r2=none and a12.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a12 and a12.Action = rel_r2);
+		r2 = none if (r2 = a12 and a12.Action = relall);
+
+		r2 = a13 if (r2=none and a13.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a13 and a13.Action = rel_r2);
+		r2 = none if (r2 = a13 and a13.Action = relall);
+
+		r2 = a15 if (r2=none and a15.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a15 and a15.Action = rel_r2);
+		r2 = none if (r2 = a15 and a15.Action = relall);
+
+		r2 = a17 if (r2=none and a17.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a17 and a17.Action = rel_r2);
+		r2 = none if (r2 = a17 and a17.Action = relall);
+
+		r2 = a18 if (r2=none and a18.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a18 and a18.Action = rel_r2);
+		r2 = none if (r2 = a18 and a18.Action = relall);
+
+		r2 = a19 if (r2=none and a19.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a19 and a19.Action = rel_r2);
+		r2 = none if (r2 = a19 and a19.Action = relall);
+
+		r2 = a20 if (r2=none and a20.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a20 and a20.Action = rel_r2);
+		r2 = none if (r2 = a20 and a20.Action = relall);
+
+		r2 = a5 if (r2=none and a5.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a5 and a5.Action = rel_r2);
+		r2 = none if (r2 = a5 and a5.Action = relall);
+
+		r2 = a7 if (r2=none and a7.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a7 and a7.Action = rel_r2);
+		r2 = none if (r2 = a7 and a7.Action = relall);
+
+		r2 = a8 if (r2=none and a8.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a9.Action=req_r2));
+		r2 = none if (r2 = a8 and a8.Action = rel_r2);
+		r2 = none if (r2 = a8 and a8.Action = relall);
+
+		r2 = a9 if (r2=none and a9.Action=req_r2 and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2));
+		r2 = none if (r2 = a9 and a9.Action = rel_r2);
+		r2 = none if (r2 = a9 and a9.Action = relall);
+
+		r3 = a1 if (r3=none and a1.Action=req_r3 and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a1 and a1.Action = rel_r3);
+		r3 = none if (r3 = a1 and a1.Action = relall);
+
+		r3 = a10 if (r3=none and a10.Action=req_r3 and !(a1.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a10 and a10.Action = rel_r3);
+		r3 = none if (r3 = a10 and a10.Action = relall);
+
+		r3 = a11 if (r3=none and a11.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a11 and a11.Action = rel_r3);
+		r3 = none if (r3 = a11 and a11.Action = relall);
+
+		r3 = a12 if (r3=none and a12.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a12 and a12.Action = rel_r3);
+		r3 = none if (r3 = a12 and a12.Action = relall);
+
+		r3 = a13 if (r3=none and a13.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a13 and a13.Action = rel_r3);
+		r3 = none if (r3 = a13 and a13.Action = relall);
+
+		r3 = a15 if (r3=none and a15.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a15 and a15.Action = rel_r3);
+		r3 = none if (r3 = a15 and a15.Action = relall);
+
+		r3 = a17 if (r3=none and a17.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a17 and a17.Action = rel_r3);
+		r3 = none if (r3 = a17 and a17.Action = relall);
+
+		r3 = a19 if (r3=none and a19.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a19 and a19.Action = rel_r3);
+		r3 = none if (r3 = a19 and a19.Action = relall);
+
+		r3 = a2 if (r3=none and a2.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a2 and a2.Action = rel_r3);
+		r3 = none if (r3 = a2 and a2.Action = relall);
+
+		r3 = a3 if (r3=none and a3.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a3 and a3.Action = rel_r3);
+		r3 = none if (r3 = a3 and a3.Action = relall);
+
+		r3 = a4 if (r3=none and a4.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a4 and a4.Action = rel_r3);
+		r3 = none if (r3 = a4 and a4.Action = relall);
+
+		r3 = a5 if (r3=none and a5.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a5 and a5.Action = rel_r3);
+		r3 = none if (r3 = a5 and a5.Action = relall);
+
+		r3 = a7 if (r3=none and a7.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a7 and a7.Action = rel_r3);
+		r3 = none if (r3 = a7 and a7.Action = relall);
+
+		r3 = a8 if (r3=none and a8.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a9.Action=req_r3));
+		r3 = none if (r3 = a8 and a8.Action = rel_r3);
+		r3 = none if (r3 = a8 and a8.Action = relall);
+
+		r3 = a9 if (r3=none and a9.Action=req_r3 and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3));
+		r3 = none if (r3 = a9 and a9.Action = rel_r3);
+		r3 = none if (r3 = a9 and a9.Action = relall);
+
+		r4 = a1 if (r4=none and a1.Action=req_r4 and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a1 and a1.Action = rel_r4);
+		r4 = none if (r4 = a1 and a1.Action = relall);
+
+		r4 = a11 if (r4=none and a11.Action=req_r4 and !(a1.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a11 and a11.Action = rel_r4);
+		r4 = none if (r4 = a11 and a11.Action = relall);
+
+		r4 = a12 if (r4=none and a12.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a12 and a12.Action = rel_r4);
+		r4 = none if (r4 = a12 and a12.Action = relall);
+
+		r4 = a15 if (r4=none and a15.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a15 and a15.Action = rel_r4);
+		r4 = none if (r4 = a15 and a15.Action = relall);
+
+		r4 = a17 if (r4=none and a17.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a17 and a17.Action = rel_r4);
+		r4 = none if (r4 = a17 and a17.Action = relall);
+
+		r4 = a18 if (r4=none and a18.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a18 and a18.Action = rel_r4);
+		r4 = none if (r4 = a18 and a18.Action = relall);
+
+		r4 = a2 if (r4=none and a2.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a2 and a2.Action = rel_r4);
+		r4 = none if (r4 = a2 and a2.Action = relall);
+
+		r4 = a20 if (r4=none and a20.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a20 and a20.Action = rel_r4);
+		r4 = none if (r4 = a20 and a20.Action = relall);
+
+		r4 = a5 if (r4=none and a5.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a5 and a5.Action = rel_r4);
+		r4 = none if (r4 = a5 and a5.Action = relall);
+
+		r4 = a8 if (r4=none and a8.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a9.Action=req_r4));
+		r4 = none if (r4 = a8 and a8.Action = rel_r4);
+		r4 = none if (r4 = a8 and a8.Action = relall);
+
+		r4 = a9 if (r4=none and a9.Action=req_r4 and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4));
+		r4 = none if (r4 = a9 and a9.Action = rel_r4);
+		r4 = none if (r4 = a9 and a9.Action = relall);
+
+		r5 = a1 if (r5=none and a1.Action=req_r5 and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a1 and a1.Action = rel_r5);
+		r5 = none if (r5 = a1 and a1.Action = relall);
+
+		r5 = a10 if (r5=none and a10.Action=req_r5 and !(a1.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a10 and a10.Action = rel_r5);
+		r5 = none if (r5 = a10 and a10.Action = relall);
+
+		r5 = a11 if (r5=none and a11.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a11 and a11.Action = rel_r5);
+		r5 = none if (r5 = a11 and a11.Action = relall);
+
+		r5 = a12 if (r5=none and a12.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a12 and a12.Action = rel_r5);
+		r5 = none if (r5 = a12 and a12.Action = relall);
+
+		r5 = a14 if (r5=none and a14.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a14 and a14.Action = rel_r5);
+		r5 = none if (r5 = a14 and a14.Action = relall);
+
+		r5 = a15 if (r5=none and a15.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a15 and a15.Action = rel_r5);
+		r5 = none if (r5 = a15 and a15.Action = relall);
+
+		r5 = a16 if (r5=none and a16.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a16 and a16.Action = rel_r5);
+		r5 = none if (r5 = a16 and a16.Action = relall);
+
+		r5 = a18 if (r5=none and a18.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a18 and a18.Action = rel_r5);
+		r5 = none if (r5 = a18 and a18.Action = relall);
+
+		r5 = a2 if (r5=none and a2.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a2 and a2.Action = rel_r5);
+		r5 = none if (r5 = a2 and a2.Action = relall);
+
+		r5 = a20 if (r5=none and a20.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a20 and a20.Action = rel_r5);
+		r5 = none if (r5 = a20 and a20.Action = relall);
+
+		r5 = a3 if (r5=none and a3.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a3 and a3.Action = rel_r5);
+		r5 = none if (r5 = a3 and a3.Action = relall);
+
+		r5 = a4 if (r5=none and a4.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a4 and a4.Action = rel_r5);
+		r5 = none if (r5 = a4 and a4.Action = relall);
+
+		r5 = a5 if (r5=none and a5.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a5 and a5.Action = rel_r5);
+		r5 = none if (r5 = a5 and a5.Action = relall);
+
+		r5 = a8 if (r5=none and a8.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a9.Action=req_r5));
+		r5 = none if (r5 = a8 and a8.Action = rel_r5);
+		r5 = none if (r5 = a8 and a8.Action = relall);
+
+		r5 = a9 if (r5=none and a9.Action=req_r5 and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5));
+		r5 = none if (r5 = a9 and a9.Action = rel_r5);
+		r5 = none if (r5 = a9 and a9.Action = relall);
+
+		r6 = a1 if (r6=none and a1.Action=req_r6 and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a1 and a1.Action = rel_r6);
+		r6 = none if (r6 = a1 and a1.Action = relall);
+
+		r6 = a10 if (r6=none and a10.Action=req_r6 and !(a1.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a10 and a10.Action = rel_r6);
+		r6 = none if (r6 = a10 and a10.Action = relall);
+
+		r6 = a11 if (r6=none and a11.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a11 and a11.Action = rel_r6);
+		r6 = none if (r6 = a11 and a11.Action = relall);
+
+		r6 = a12 if (r6=none and a12.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a12 and a12.Action = rel_r6);
+		r6 = none if (r6 = a12 and a12.Action = relall);
+
+		r6 = a13 if (r6=none and a13.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a13 and a13.Action = rel_r6);
+		r6 = none if (r6 = a13 and a13.Action = relall);
+
+		r6 = a18 if (r6=none and a18.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a18 and a18.Action = rel_r6);
+		r6 = none if (r6 = a18 and a18.Action = relall);
+
+		r6 = a19 if (r6=none and a19.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a19 and a19.Action = rel_r6);
+		r6 = none if (r6 = a19 and a19.Action = relall);
+
+		r6 = a2 if (r6=none and a2.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a2 and a2.Action = rel_r6);
+		r6 = none if (r6 = a2 and a2.Action = relall);
+
+		r6 = a20 if (r6=none and a20.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a20 and a20.Action = rel_r6);
+		r6 = none if (r6 = a20 and a20.Action = relall);
+
+		r6 = a5 if (r6=none and a5.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a5 and a5.Action = rel_r6);
+		r6 = none if (r6 = a5 and a5.Action = relall);
+
+		r6 = a6 if (r6=none and a6.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a6 and a6.Action = rel_r6);
+		r6 = none if (r6 = a6 and a6.Action = relall);
+
+		r6 = a7 if (r6=none and a7.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a7 and a7.Action = rel_r6);
+		r6 = none if (r6 = a7 and a7.Action = relall);
+
+		r6 = a8 if (r6=none and a8.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a9.Action=req_r6));
+		r6 = none if (r6 = a8 and a8.Action = rel_r6);
+		r6 = none if (r6 = a8 and a8.Action = relall);
+
+		r6 = a9 if (r6=none and a9.Action=req_r6 and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6));
+		r6 = none if (r6 = a9 and a9.Action = rel_r6);
+		r6 = none if (r6 = a9 and a9.Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a1
+	Lobsvars = {r4,r2,r3,r5,r1,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r2,rel_r2,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a1 : {rel_r4};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a1 : {rel_r2};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a1 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a1 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a1 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a1 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a10
+	Lobsvars = {r2,r3,r5,r1,r6};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r2,rel_r2,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a10 : {rel_r2};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a10 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a10 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a10 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a10 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a11
+	Lobsvars = {r4,r2,r3,r5,r1,r6};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r2,rel_r2,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a11 : {rel_r4};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a11 : {rel_r2};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a11 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a11 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a11 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a11 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a12
+	Lobsvars = {r4,r2,r3,r5,r1,r6};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r2,rel_r2,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a12 : {rel_r4};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a12 : {rel_r2};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a12 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a12 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a12 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a12 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a13
+	Lobsvars = {r3,r2,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r3,rel_r3,req_r2,rel_r2,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a13 : {rel_r3};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a13 : {rel_r2};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a13 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a14
+	Lobsvars = {r1,r5};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r1,rel_r1,req_r5,rel_r5,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a14 : {rel_r1};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a14 : {rel_r5};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a15
+	Lobsvars = {r4,r2,r3,r5,r1};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r2,rel_r2,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a15 : {rel_r4};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a15 : {rel_r2};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a15 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a15 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a15 : {rel_r1};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a16
+	Lobsvars = {r1,r5};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r1,rel_r1,req_r5,rel_r5,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a16 : {rel_r1};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a16 : {rel_r5};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a17
+	Lobsvars = {r4,r3,r2};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r3,rel_r3,req_r2,rel_r2,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a17 : {rel_r4};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a17 : {rel_r3};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a17 : {rel_r2};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a18
+	Lobsvars = {r4,r2,r5,r1,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r2,rel_r2,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a18 : {rel_r4};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a18 : {rel_r2};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a18 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a18 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a18 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a19
+	Lobsvars = {r3,r2,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r3,rel_r3,req_r2,rel_r2,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a19 : {rel_r3};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a19 : {rel_r2};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a19 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a2
+	Lobsvars = {r4,r3,r5,r1,r6};
+	Vars:
+		rem : 0..1;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a2 : {rel_r4};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a2 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a2 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a2 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a2 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 1 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 1 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a20
+	Lobsvars = {r2,r4,r5,r1,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r2,rel_r2,req_r4,rel_r4,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a20 : {rel_r2};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a20 : {rel_r4};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a20 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a20 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a20 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a3
+	Lobsvars = {r3,r5};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r3,rel_r3,req_r5,rel_r5,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a3 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a3 : {rel_r5};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a4
+	Lobsvars = {r3,r5};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r3,rel_r3,req_r5,rel_r5,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a4 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a4 : {rel_r5};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a5
+	Lobsvars = {r4,r2,r3,r5,r1,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r4,rel_r4,req_r2,rel_r2,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a5 : {rel_r4};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a5 : {rel_r2};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a5 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a5 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a5 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a5 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a8.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a8.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a6.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a6
+	Lobsvars = {r1,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a6 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a6 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a9.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a7
+	Lobsvars = {r3,r2,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r3,rel_r3,req_r2,rel_r2,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a7 : {rel_r3};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a7 : {rel_r2};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a7 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a8.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a8.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a8.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a8
+	Lobsvars = {r2,r4,r3,r5,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r2,rel_r2,req_r4,rel_r4,req_r3,rel_r3,req_r5,rel_r5,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a8 : {rel_r2};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a8 : {rel_r4};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a8 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a8 : {rel_r5};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a8 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a9.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a9.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a9.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a9.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a9.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Agent a9
+	Lobsvars = {r2,r4,r3,r5,r1,r6};
+	Vars:
+		rem : 0..2;
+	end Vars
+	Actions = {req_r2,rel_r2,req_r4,rel_r4,req_r3,rel_r3,req_r5,rel_r5,req_r1,rel_r1,req_r6,rel_r6,relall,idle};
+	Protocol:
+		rem = 0 : {relall};
+		rem > 0 : {idle};
+		rem > 0 and Environment.r2 = none : {req_r2};
+		rem > 0 and Environment.r2 = a9 : {rel_r2};
+		rem > 0 and Environment.r4 = none : {req_r4};
+		rem > 0 and Environment.r4 = a9 : {rel_r4};
+		rem > 0 and Environment.r3 = none : {req_r3};
+		rem > 0 and Environment.r3 = a9 : {rel_r3};
+		rem > 0 and Environment.r5 = none : {req_r5};
+		rem > 0 and Environment.r5 = a9 : {rel_r5};
+		rem > 0 and Environment.r1 = none : {req_r1};
+		rem > 0 and Environment.r1 = a9 : {rel_r1};
+		rem > 0 and Environment.r6 = none : {req_r6};
+		rem > 0 and Environment.r6 = a9 : {rel_r6};
+	end Protocol
+	Evolution:
+		rem = rem - 1 if (Action = req_r2 and Environment.r2 = none and !(a1.Action=req_r2) and !(a10.Action=req_r2) and !(a11.Action=req_r2) and !(a12.Action=req_r2) and !(a13.Action=req_r2) and !(a15.Action=req_r2) and !(a17.Action=req_r2) and !(a18.Action=req_r2) and !(a19.Action=req_r2) and !(a20.Action=req_r2) and !(a5.Action=req_r2) and !(a7.Action=req_r2) and !(a8.Action=req_r2));
+		rem = rem + 1 if (Action = rel_r2);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r4 and Environment.r4 = none and !(a1.Action=req_r4) and !(a11.Action=req_r4) and !(a12.Action=req_r4) and !(a15.Action=req_r4) and !(a17.Action=req_r4) and !(a18.Action=req_r4) and !(a2.Action=req_r4) and !(a20.Action=req_r4) and !(a5.Action=req_r4) and !(a8.Action=req_r4));
+		rem = rem + 1 if (Action = rel_r4);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r3 and Environment.r3 = none and !(a1.Action=req_r3) and !(a10.Action=req_r3) and !(a11.Action=req_r3) and !(a12.Action=req_r3) and !(a13.Action=req_r3) and !(a15.Action=req_r3) and !(a17.Action=req_r3) and !(a19.Action=req_r3) and !(a2.Action=req_r3) and !(a3.Action=req_r3) and !(a4.Action=req_r3) and !(a5.Action=req_r3) and !(a7.Action=req_r3) and !(a8.Action=req_r3));
+		rem = rem + 1 if (Action = rel_r3);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r5 and Environment.r5 = none and !(a1.Action=req_r5) and !(a10.Action=req_r5) and !(a11.Action=req_r5) and !(a12.Action=req_r5) and !(a14.Action=req_r5) and !(a15.Action=req_r5) and !(a16.Action=req_r5) and !(a18.Action=req_r5) and !(a2.Action=req_r5) and !(a20.Action=req_r5) and !(a3.Action=req_r5) and !(a4.Action=req_r5) and !(a5.Action=req_r5) and !(a8.Action=req_r5));
+		rem = rem + 1 if (Action = rel_r5);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r1 and Environment.r1 = none and !(a1.Action=req_r1) and !(a10.Action=req_r1) and !(a11.Action=req_r1) and !(a12.Action=req_r1) and !(a14.Action=req_r1) and !(a15.Action=req_r1) and !(a16.Action=req_r1) and !(a18.Action=req_r1) and !(a2.Action=req_r1) and !(a20.Action=req_r1) and !(a5.Action=req_r1) and !(a6.Action=req_r1));
+		rem = rem + 1 if (Action = rel_r1);
+		rem = 2 if (Action = relall);
+
+		rem = rem - 1 if (Action = req_r6 and Environment.r6 = none and !(a1.Action=req_r6) and !(a10.Action=req_r6) and !(a11.Action=req_r6) and !(a12.Action=req_r6) and !(a13.Action=req_r6) and !(a18.Action=req_r6) and !(a19.Action=req_r6) and !(a2.Action=req_r6) and !(a20.Action=req_r6) and !(a5.Action=req_r6) and !(a6.Action=req_r6) and !(a7.Action=req_r6) and !(a8.Action=req_r6));
+		rem = rem + 1 if (Action = rel_r6);
+		rem = 2 if (Action = relall);
+
+	end Evolution
+end Agent
+
+Evaluation
+	a1_eat if (a1.rem = 0);
+	a10_eat if (a10.rem = 0);
+	a11_eat if (a11.rem = 0);
+	a12_eat if (a12.rem = 0);
+	a13_eat if (a13.rem = 0);
+	a14_eat if (a14.rem = 0);
+	a15_eat if (a15.rem = 0);
+	a16_eat if (a16.rem = 0);
+	a17_eat if (a17.rem = 0);
+	a18_eat if (a18.rem = 0);
+	a19_eat if (a19.rem = 0);
+	a2_eat if (a2.rem = 0);
+	a20_eat if (a20.rem = 0);
+	a3_eat if (a3.rem = 0);
+	a4_eat if (a4.rem = 0);
+	a5_eat if (a5.rem = 0);
+	a6_eat if (a6.rem = 0);
+	a7_eat if (a7.rem = 0);
+	a8_eat if (a8.rem = 0);
+	a9_eat if (a9.rem = 0);
+end Evaluation
+
+InitStates
+	Environment.r1 = none and
+	Environment.r2 = none and
+	Environment.r3 = none and
+	Environment.r4 = none and
+	Environment.r5 = none and
+	Environment.r6 = none and
+	a1.rem = 2 and
+	a10.rem = 1 and
+	a11.rem = 1 and
+	a12.rem = 1 and
+	a13.rem = 2 and
+	a14.rem = 2 and
+	a15.rem = 1 and
+	a16.rem = 1 and
+	a17.rem = 2 and
+	a18.rem = 2 and
+	a19.rem = 2 and
+	a2.rem = 1 and
+	a20.rem = 2 and
+	a3.rem = 2 and
+	a4.rem = 2 and
+	a5.rem = 2 and
+	a6.rem = 2 and
+	a7.rem = 2 and
+	a8.rem = 2 and
+	a9.rem = 2;
+end InitStates
+
+Groups
+	all = {a17};
+end Groups
+
+Formulae
+	<all>F a17_eat;
+end Formulae
+

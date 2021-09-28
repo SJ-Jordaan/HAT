@@ -1,0 +1,30 @@
+a1:
+  access:
+  - r4
+  demand: 1
+a2:
+  access:
+  - r6
+  - r7
+  - r2
+  demand: 1
+a3:
+  access:
+  - r1
+  - r6
+  - r7
+  - r3
+  - r8
+  - r2
+  demand: 1
+a4:
+  access:
+  - r4
+  demand: 1
+fairness: false
+formulae:
+- <all> live
+observable: <none>
+
+# USAGE GUIDE ===============
+# ===========================

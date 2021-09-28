@@ -4,6 +4,7 @@ export class RegexValidator {
   private static lineWithAgentName = /Agent a\d+/;
   private static lineWithTransition = /\d+ -> \d+/;
   private static emptyLine = /^\s*$/;
+  private static comment = /\/{2}/;
 
   public static extractNumericalValue(line: string): string {
     return line?.match?.(this.numericalValue)?.[0] || '';
@@ -17,6 +18,10 @@ export class RegexValidator {
         ?.match?.(/\<(.*?)\>/)?.[1]
         ?.split?.(';') || [];
     return [transitions, actions];
+  }
+
+  public static isComment(line: string): boolean {
+    return this.comment.test(line);
   }
 
   public static isStateName(line: string): boolean {

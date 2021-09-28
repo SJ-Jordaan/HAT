@@ -1,0 +1,15 @@
+// Input processor ignores any line with double slashes (or empty lines)
+
+// 1. Define coalition
+a1,a2,a3
+
+// 2. Define goal type
+// ONCE_OFF_ORDERED_GOAL
+ONCE_OFF_SIMULTANEOUS_GOAL
+
+// 3. Dot file path
+//input/e5/formula1.dot
+input/mock.dot
+// 4. Info file path
+//input/e5/formula1.info
+input/mock.info

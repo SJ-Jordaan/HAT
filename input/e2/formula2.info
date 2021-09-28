@@ -1,0 +1,1350 @@
+-- State 0 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 1 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 2 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 3 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=a1
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 4 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=none
+    r6=none
+    r7=a3
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 5 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=a2
+    r7=a3
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 6 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=0
+
+-- State 7 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 8 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=0
+
+-- State 9 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a4
+    r6=none
+    r7=a3
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 10 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a1
+    r6=none
+    r7=a3
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 11 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 12 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 13 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 14 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=a1
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 15 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=none
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 16 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=a3
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 17 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 18 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=a2
+    r7=a3
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 19 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=1
+  Agent a4
+    rem=0
+
+-- State 20 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=a3
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 21 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=1
+  Agent a4
+    rem=1
+
+-- State 22 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=a2
+    r7=a3
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 23 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=1
+  Agent a4
+    rem=0
+
+-- State 24 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=a3
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 25 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=a3
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 26 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a4
+    r6=a3
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 27 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=a2
+    r7=none
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 28 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=a4
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 29 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=none
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 30 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=none
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 31 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=a3
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 32 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=a2
+    r8=a3
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 33 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=a2
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 34 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=a3
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 35 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 36 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=a3
+    r7=a2
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 37 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=a1
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 38 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=a3
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 39 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=none
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 40 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 41 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 42 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 43 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=a2
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 44 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=a4
+    r6=none
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 45 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=a3
+    r7=a2
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 46 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 47 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=a4
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 48 --
+  Agent Environment
+    r1=none
+    r2=a3
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 49 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=none
+    r6=a3
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 50 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=a1
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 51 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=a3
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 52 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=a2
+    r7=none
+    r8=a3
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 53 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 54 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=a1
+    r6=a3
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 55 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=none
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 56 --
+  Agent Environment
+    r1=a3
+    r2=a2
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 57 --
+  Agent Environment
+    r1=a3
+    r2=a2
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 58 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 59 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=a3
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 60 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=a3
+    r4=a1
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 61 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=a3
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 62 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 63 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a1
+    r6=none
+    r7=none
+    r8=a3
+  Agent a1
+    rem=0
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 64 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=a4
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 65 --
+  Agent Environment
+    r1=a3
+    r2=a2
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 66 --
+  Agent Environment
+    r1=none
+    r2=a2
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 67 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 68 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=a4
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 69 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=a4
+    r6=a2
+    r7=none
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 70 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=a1
+    r6=a2
+    r7=none
+    r8=none
+  Agent a1
+    rem=0
+  Agent a2
+    rem=0
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 71 --
+  Agent Environment
+    r1=a3
+    r2=none
+    r3=none
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 72 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=a4
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=0
+
+-- State 73 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=a3
+    r4=none
+    r6=none
+    r7=none
+    r8=none
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+
+-- State 74 --
+  Agent Environment
+    r1=none
+    r2=none
+    r3=none
+    r4=none
+    r6=none
+    r7=none
+    r8=a3
+  Agent a1
+    rem=1
+  Agent a2
+    rem=1
+  Agent a3
+    rem=0
+  Agent a4
+    rem=1
+

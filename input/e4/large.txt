@@ -1,0 +1,149 @@
+a1:
+  access:
+  - r4
+  - r2
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 2
+a10:
+  access:
+  - r2
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 1
+a11:
+  access:
+  - r4
+  - r2
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 1
+a12:
+  access:
+  - r4
+  - r2
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 1
+a13:
+  access:
+  - r3
+  - r2
+  - r6
+  demand: 2
+a14:
+  access:
+  - r1
+  - r5
+  demand: 2
+a15:
+  access:
+  - r4
+  - r2
+  - r3
+  - r5
+  - r1
+  demand: 1
+a16:
+  access:
+  - r1
+  - r5
+  demand: 1
+a17:
+  access:
+  - r4
+  - r3
+  - r2
+  demand: 2
+a18:
+  access:
+  - r4
+  - r2
+  - r5
+  - r1
+  - r6
+  demand: 2
+a19:
+  access:
+  - r3
+  - r2
+  - r6
+  demand: 2
+a2:
+  access:
+  - r4
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 1
+a20:
+  access:
+  - r2
+  - r4
+  - r5
+  - r1
+  - r6
+  demand: 2
+a3:
+  access:
+  - r3
+  - r5
+  demand: 2
+a4:
+  access:
+  - r3
+  - r5
+  demand: 2
+a5:
+  access:
+  - r4
+  - r2
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 2
+a6:
+  access:
+  - r1
+  - r6
+  demand: 2
+a7:
+  access:
+  - r3
+  - r2
+  - r6
+  demand: 2
+a8:
+  access:
+  - r2
+  - r4
+  - r3
+  - r5
+  - r6
+  demand: 2
+a9:
+  access:
+  - r2
+  - r4
+  - r3
+  - r5
+  - r1
+  - r6
+  demand: 2
+fairness: false
+formulae:
+- <all> live
+observable: <none>
+
+# USAGE GUIDE ===============
+# ===========================
