@@ -124,7 +124,7 @@ export class Game {
     this.setupGraph(states);
 
     // TODO: Update the dfs
-    // this.dfsStrategy();
+    this.dfsStrategy();
     this.dfsStrategyWithHeuristics();
   }
 }

@@ -86,42 +86,42 @@ export class Graph {
     log.analyse('Beginning regular depth first search...');
     const t0 = performance.now();
     // LOGGING ABOVE
-
     const path: State[] = [];
     const visited = new Set<State>();
     const stack = [first];
+    let nodesTraversed = 0;
 
     while (stack.length !== 0) {
-      log.debug(`Next in stack is ${stack[stack.length - 1].getPayload().name}`);
-      const node = stack.pop();
-      log.debug(`State ${node!.getPayload().name!} is going to be checked`);
-
-      if (node && !visited.has(node)) {
-        log.debug(`State ${node.getPayload().name} is added to the path`);
-
-        path.push(node);
-
-        if (goal.isFound(node)) {
-          log.debug(
-            `State ${node.getPayload().name} is a goal state with demand ${
-              node.getPayload().demand
-            }`,
-          );
-          const t1 = performance.now();
-          console.log(roundToTwo(t1 - t0));
-          log.analyse(`took ${roundToTwo(t1 - t0)} ms`);
-          yield path;
-        }
-
-        visited.add(node);
-
-        node.getAdjacents().forEach((adj, index) => {
-          if (!stack.includes(adj) && !visited.has(adj)) {
-            log.debug(`Adjacent ${index} is ${adj.getPayload().name}`);
-            stack.push(adj);
-          }
-        });
+      const node = stack.pop()!;
+      if (visited.has(node)) {
+        path.pop();
+        continue;
       }
+      nodesTraversed++;
+      path.push(node);
+
+      visited.add(node);
+      log.debug(`State ${node.getPayload().name} is added to the path`);
+
+      if (goal.isFound(node)) {
+          log.debug(
+          `State ${node.getPayload().name} is a goal state with demand ${
+            node.getPayload().demand
+          }`,
+        );
+        const t1 = performance.now();
+        log.analyse(`took ${roundToTwo(t1 - t0)} ms`);
+        log.analyse(`${nodesTraversed} nodes traversed`);
+        yield path;
+      }
+      
+      stack.push(node);
+      node.getAdjacents().forEach((adj, index) => {
+        if (!stack.includes(adj) && !visited.has(adj)) {
+          log.debug(`Adjacent ${index} is ${adj.getPayload().name}`);
+          stack.push(adj);
+        }
+      });
     }
   }
 
@@ -133,6 +133,7 @@ export class Graph {
     const path: State[] = [];
     const visited = new Set<State>();
     const stack = [first];
+    let nodesTraversed = 0;
 
     while (stack.length !== 0) {
       log.debug(`First in stack is ${stack[0].getPayload().name}`);
@@ -141,7 +142,7 @@ export class Graph {
 
       if (node && !visited.has(node) && goal.isTowards(node)) {
         log.debug(`State ${node.getPayload().name} is added to the path`);
-
+        nodesTraversed++;
         path.push(node);
 
         if (goal.isFound(node)) {
@@ -152,6 +153,7 @@ export class Graph {
           );
           const t1 = performance.now();
           log.analyse(`took ${roundToTwo(t1 - t0)} ms`);
+          log.analyse(`${nodesTraversed} nodes traversed`);
           yield path;
         }
 

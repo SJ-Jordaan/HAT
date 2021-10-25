@@ -1,100 +1,1615 @@
-0.21
-0.2
-0.21
-0.21
-0.24
-0.22
-0.2
-0.2
-0.22
-0.2
-0.36
-0.34
-0.21
-0.22
-0.2
-0.48
-0.22
-0.32
-0.21
-0.2
-0.22
-0.19
-0.21
-0.21
-0.2
-0.26
-0.22
-0.48
-0.2
-0.23
-0.25
-0.21
-0.23
-0.23
-0.22
-0.2
-0.21
-0.2
-0.24
-0.19
-0.21
-0.25
-0.32
-0.27
-0.35
-0.21
-0.21
-0.43
-0.21
-0.19
-0.2
-0.2
-0.2
-0.31
-0.2
-0.34
-0.28
-0.21
-0.2
-0.23
-0.2
-0.24
-0.38
-0.2
-0.2
-0.23
-0.2
-0.2
-0.38
-0.25
-0.2
-0.25
-0.31
-0.23
-0.22
-0.25
-0.3
-0.2
-0.31
-0.21
-0.2
-0.23
-0.2
-0.29
-0.23
-0.26
-0.19
-0.2
-0.19
-0.22
-0.3
-0.37
-0.3
-0.23
-0.2
-0.29
-0.2
-0.26
-0.26
-0.21
+
+> research_tool@1.0.0 start /mnt/c/Repos/HAT
+> ts-node index.ts
+
+------------------------------------------- DEBUGGING -------------------------------------------
+Reading input.txt...
+
+{
+  "coalition": [
+    "a7"
+  ],
+  "goalType": "ONCE_OFF_SIMULTANEOUS_GOAL",
+  "dotFileName": "input/medium/formula1.dot",
+  "infoFileName": "input/medium/formula1.info"
+}
+took 9.55 ms
+Beginning state extraction from input files...
+took 3267.25 ms
+Beginning regular depth first search...
+Next in stack is 0
+State 0 is going to be checked
+State 0 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 0
+Adjacent 0 is 1
+Adjacent 1 is 2
+Adjacent 2 is 3
+Adjacent 3 is 4
+Adjacent 4 is 5
+Adjacent 6 is 6
+Adjacent 7 is 7
+Adjacent 19 is 8
+Adjacent 20 is 9
+Adjacent 21 is 10
+Adjacent 28 is 11
+Adjacent 33 is 12
+Adjacent 34 is 13
+Adjacent 35 is 14
+Adjacent 47 is 15
+Adjacent 48 is 16
+Adjacent 49 is 17
+Adjacent 50 is 18
+Adjacent 51 is 19
+Adjacent 52 is 20
+Adjacent 53 is 21
+Adjacent 54 is 22
+Adjacent 56 is 23
+Adjacent 57 is 24
+Adjacent 58 is 25
+Adjacent 59 is 26
+Adjacent 71 is 27
+Adjacent 72 is 28
+Adjacent 73 is 29
+Adjacent 74 is 30
+Adjacent 76 is 31
+Adjacent 77 is 32
+Adjacent 78 is 33
+Adjacent 79 is 34
+Adjacent 80 is 35
+Adjacent 81 is 36
+Adjacent 108 is 37
+Adjacent 110 is 38
+Adjacent 112 is 39
+Adjacent 113 is 40
+Adjacent 125 is 41
+Adjacent 127 is 42
+Adjacent 128 is 43
+Adjacent 129 is 44
+Adjacent 130 is 45
+Adjacent 131 is 46
+Adjacent 132 is 47
+Adjacent 137 is 48
+Adjacent 138 is 49
+Adjacent 139 is 50
+Adjacent 140 is 51
+Adjacent 167 is 52
+Adjacent 168 is 53
+Adjacent 180 is 54
+Adjacent 185 is 55
+Adjacent 186 is 56
+Adjacent 187 is 57
+Adjacent 189 is 58
+Adjacent 221 is 59
+Adjacent 222 is 60
+Adjacent 418 is 61
+Adjacent 420 is 62
+Adjacent 459 is 63
+Adjacent 471 is 64
+Adjacent 478 is 65
+Adjacent 483 is 66
+Adjacent 484 is 67
+Adjacent 486 is 68
+Adjacent 487 is 69
+Adjacent 489 is 70
+Adjacent 506 is 71
+Adjacent 508 is 72
+Adjacent 1129 is 73
+Adjacent 1131 is 74
+Adjacent 1132 is 75
+Adjacent 1134 is 76
+Adjacent 1135 is 77
+Adjacent 1136 is 78
+Adjacent 1138 is 79
+Adjacent 1139 is 80
+Adjacent 1171 is 81
+Adjacent 1172 is 82
+Adjacent 1184 is 83
+Adjacent 1186 is 84
+Adjacent 1187 is 85
+Adjacent 1188 is 86
+Adjacent 1189 is 87
+Adjacent 1191 is 88
+Adjacent 1192 is 89
+Adjacent 1193 is 90
+Adjacent 1251 is 91
+Adjacent 1253 is 92
+Adjacent 1254 is 93
+Adjacent 1255 is 94
+Adjacent 1256 is 95
+Adjacent 1258 is 96
+Adjacent 1260 is 97
+Adjacent 1261 is 98
+Adjacent 1262 is 99
+Adjacent 1263 is 100
+Adjacent 1264 is 101
+Adjacent 1265 is 102
+Adjacent 1266 is 103
+Adjacent 1267 is 104
+Adjacent 1268 is 105
+Adjacent 1269 is 106
+Adjacent 1271 is 107
+Adjacent 1272 is 108
+Adjacent 1277 is 109
+Adjacent 1278 is 110
+Adjacent 1279 is 111
+Adjacent 1280 is 112
+Adjacent 1281 is 113
+Adjacent 1282 is 114
+Adjacent 1283 is 115
+Adjacent 1285 is 116
+Adjacent 1286 is 117
+Adjacent 1287 is 118
+Adjacent 1288 is 119
+Adjacent 1289 is 120
+Adjacent 1290 is 121
+Adjacent 1291 is 122
+Adjacent 1292 is 123
+Adjacent 1293 is 124
+Adjacent 1310 is 125
+Adjacent 1311 is 126
+Adjacent 1312 is 127
+Adjacent 1313 is 128
+Adjacent 1315 is 129
+Adjacent 1316 is 130
+Adjacent 1328 is 131
+Adjacent 1329 is 132
+Adjacent 1330 is 133
+Adjacent 1342 is 134
+Adjacent 1369 is 135
+Adjacent 1370 is 136
+Adjacent 1409 is 137
+Adjacent 1410 is 138
+Adjacent 1411 is 139
+Adjacent 1423 is 140
+Adjacent 1424 is 141
+Adjacent 1425 is 142
+Adjacent 1426 is 143
+Adjacent 1470 is 144
+Adjacent 1471 is 145
+Adjacent 1472 is 146
+Adjacent 1499 is 147
+Adjacent 1500 is 148
+Adjacent 1502 is 149
+Adjacent 1503 is 150
+Adjacent 1504 is 151
+Adjacent 1531 is 152
+Adjacent 1532 is 153
+Adjacent 1533 is 154
+Adjacent 1534 is 155
+Adjacent 1535 is 156
+Adjacent 1537 is 157
+Adjacent 1539 is 158
+Adjacent 1544 is 159
+Adjacent 1545 is 160
+Adjacent 1546 is 161
+Adjacent 1573 is 162
+Adjacent 1575 is 163
+Adjacent 1576 is 164
+Adjacent 1578 is 165
+Adjacent 1579 is 166
+Adjacent 1581 is 167
+Adjacent 1582 is 168
+Adjacent 1583 is 169
+Adjacent 1595 is 170
+Adjacent 1596 is 171
+Adjacent 1598 is 172
+Adjacent 1600 is 173
+Adjacent 1601 is 174
+Adjacent 1602 is 175
+Adjacent 1603 is 176
+Adjacent 1604 is 177
+Adjacent 1606 is 178
+Adjacent 1607 is 179
+Adjacent 1608 is 180
+Adjacent 1609 is 181
+Adjacent 1610 is 182
+Adjacent 1637 is 183
+Adjacent 1876 is 184
+Adjacent 1881 is 185
+Adjacent 1883 is 186
+Adjacent 1890 is 187
+Adjacent 1902 is 188
+Adjacent 1941 is 189
+Adjacent 1942 is 190
+Adjacent 1947 is 191
+Adjacent 1948 is 192
+Adjacent 1949 is 193
+Adjacent 2188 is 194
+Adjacent 2189 is 195
+Adjacent 2216 is 196
+Adjacent 2217 is 197
+Adjacent 2219 is 198
+Adjacent 2246 is 199
+Adjacent 2247 is 200
+Adjacent 2248 is 201
+Adjacent 2249 is 202
+Adjacent 2254 is 203
+Adjacent 2266 is 204
+Adjacent 2293 is 205
+Adjacent 2294 is 206
+Adjacent 2296 is 207
+Adjacent 2297 is 208
+Adjacent 2298 is 209
+Adjacent 2299 is 210
+Adjacent 2326 is 211
+Adjacent 2327 is 212
+Adjacent 2339 is 213
+Adjacent 2340 is 214
+Adjacent 2341 is 215
+Adjacent 2342 is 216
+Adjacent 2343 is 217
+Adjacent 2345 is 218
+Adjacent 2346 is 219
+Adjacent 2498 is 220
+Adjacent 2499 is 221
+Adjacent 2501 is 222
+Adjacent 2571 is 223
+Adjacent 2572 is 224
+Adjacent 2573 is 225
+Adjacent 2580 is 226
+Adjacent 2581 is 227
+Adjacent 2582 is 228
+Adjacent 2599 is 229
+Adjacent 2600 is 230
+Adjacent 2601 is 231
+Adjacent 2628 is 232
+Adjacent 2640 is 233
+Adjacent 2642 is 234
+Adjacent 2643 is 235
+Adjacent 2645 is 236
+Adjacent 2646 is 237
+Adjacent 2647 is 238
+Adjacent 2648 is 239
+Adjacent 2649 is 240
+Adjacent 2654 is 241
+Adjacent 2659 is 242
+Adjacent 2661 is 243
+Adjacent 2666 is 244
+Adjacent 2667 is 245
+Adjacent 2679 is 246
+Adjacent 2681 is 247
+Adjacent 2682 is 248
+Adjacent 2687 is 249
+Adjacent 2699 is 250
+Adjacent 2760 is 251
+Adjacent 2761 is 252
+Adjacent 2778 is 253
+Adjacent 2779 is 254
+Adjacent 2780 is 255
+Adjacent 2781 is 256
+Adjacent 2783 is 257
+Adjacent 2784 is 258
+Adjacent 2785 is 259
+Adjacent 2787 is 260
+Adjacent 2788 is 261
+Adjacent 2789 is 262
+Adjacent 2941 is 263
+Adjacent 2943 is 264
+Adjacent 2944 is 265
+Adjacent 2971 is 266
+Adjacent 2972 is 267
+Adjacent 3030 is 268
+Adjacent 3031 is 269
+Adjacent 3058 is 270
+Adjacent 3059 is 271
+Adjacent 3060 is 272
+Adjacent 3065 is 273
+Adjacent 3072 is 274
+Adjacent 3133 is 275
+Adjacent 3134 is 276
+Adjacent 3141 is 277
+Adjacent 3142 is 278
+Adjacent 3143 is 279
+Adjacent 3182 is 280
+Adjacent 3183 is 281
+Adjacent 3195 is 282
+Adjacent 3196 is 283
+Adjacent 3198 is 284
+Adjacent 3215 is 285
+Adjacent 3242 is 286
+Adjacent 3247 is 287
+Adjacent 3264 is 288
+Adjacent 3265 is 289
+Adjacent 3266 is 290
+Adjacent 3278 is 291
+Adjacent 3305 is 292
+Adjacent 3306 is 293
+Adjacent 3307 is 294
+Adjacent 3308 is 295
+Adjacent 3320 is 296
+Adjacent 3321 is 297
+Adjacent 3348 is 298
+Adjacent 3350 is 299
+Adjacent 3351 is 300
+Adjacent 3352 is 301
+Adjacent 3353 is 302
+Adjacent 3365 is 303
+Adjacent 3370 is 304
+Adjacent 3371 is 305
+Adjacent 3372 is 306
+Adjacent 3399 is 307
+Adjacent 3404 is 308
+Adjacent 3406 is 309
+Adjacent 3433 is 310
+Adjacent 3477 is 311
+Adjacent 3489 is 312
+Adjacent 3491 is 313
+Adjacent 3523 is 314
+Adjacent 3530 is 315
+Adjacent 3562 is 316
+Adjacent 3867 is 317
+Adjacent 3879 is 318
+Adjacent 3911 is 319
+Adjacent 3912 is 320
+Adjacent 3913 is 321
+Adjacent 3983 is 322
+Adjacent 3984 is 323
+Adjacent 3985 is 324
+Adjacent 3986 is 325
+Adjacent 4013 is 326
+Adjacent 4040 is 327
+Adjacent 4041 is 328
+Adjacent 4596 is 329
+Adjacent 4597 is 330
+Adjacent 4609 is 331
+Adjacent 4636 is 332
+Adjacent 4663 is 333
+Adjacent 4665 is 334
+Adjacent 4666 is 335
+Adjacent 4667 is 336
+Adjacent 4694 is 337
+Adjacent 4721 is 338
+Adjacent 4728 is 339
+Adjacent 4735 is 340
+Adjacent 4887 is 341
+Adjacent 4888 is 342
+Adjacent 4900 is 343
+Adjacent 4927 is 344
+Adjacent 4928 is 345
+Adjacent 4955 is 346
+Adjacent 4957 is 347
+Adjacent 4958 is 348
+Adjacent 4963 is 349
+Adjacent 4975 is 350
+Adjacent 4992 is 351
+Adjacent 5004 is 352
+Adjacent 5009 is 353
+Adjacent 5010 is 354
+Adjacent 5011 is 355
+Adjacent 5016 is 356
+Adjacent 5017 is 357
+Adjacent 5018 is 358
+Adjacent 5019 is 359
+Adjacent 5020 is 360
+Adjacent 5078 is 361
+Adjacent 5079 is 362
+Adjacent 5106 is 363
+Adjacent 5108 is 364
+Adjacent 5120 is 365
+Adjacent 5159 is 366
+Adjacent 5171 is 367
+Adjacent 5172 is 368
+Adjacent 5173 is 369
+Adjacent 5174 is 370
+Adjacent 5191 is 371
+Adjacent 5192 is 372
+Adjacent 5219 is 373
+Adjacent 5220 is 374
+Adjacent 5232 is 375
+Adjacent 5853 is 376
+Adjacent 5854 is 377
+Adjacent 5859 is 378
+Adjacent 5860 is 379
+Adjacent 5861 is 380
+Adjacent 5900 is 381
+Adjacent 5905 is 382
+Adjacent 5906 is 383
+Adjacent 5933 is 384
+Adjacent 6030 is 385
+Adjacent 6410 is 386
+Adjacent 6411 is 387
+Adjacent 6423 is 388
+Adjacent 6428 is 389
+Adjacent 6429 is 390
+Adjacent 6430 is 391
+Adjacent 6431 is 392
+Adjacent 6432 is 393
+Adjacent 6444 is 394
+Adjacent 6456 is 395
+Adjacent 6461 is 396
+Adjacent 6493 is 397
+Adjacent 6520 is 398
+Adjacent 6521 is 399
+Adjacent 6522 is 400
+Adjacent 7472 is 401
+Adjacent 7473 is 402
+Adjacent 7474 is 403
+Adjacent 7479 is 404
+Adjacent 7491 is 405
+Adjacent 7492 is 406
+Adjacent 7494 is 407
+Adjacent 7521 is 408
+Adjacent 7522 is 409
+Adjacent 7527 is 410
+Adjacent 7528 is 411
+Adjacent 7529 is 412
+Adjacent 7530 is 413
+Adjacent 7600 is 414
+Adjacent 7670 is 415
+Adjacent 7671 is 416
+Adjacent 7673 is 417
+Adjacent 7731 is 418
+Adjacent 7736 is 419
+Adjacent 7737 is 420
+Adjacent 7749 is 421
+Adjacent 7776 is 422
+Adjacent 7875 is 423
+Adjacent 8114 is 424
+Adjacent 8141 is 425
+Adjacent 8142 is 426
+Adjacent 8143 is 427
+Adjacent 8144 is 428
+Adjacent 8171 is 429
+Adjacent 8172 is 430
+Adjacent 8173 is 431
+Adjacent 8175 is 432
+Adjacent 8177 is 433
+Adjacent 8209 is 434
+Adjacent 8221 is 435
+Adjacent 8233 is 436
+Adjacent 8234 is 437
+Adjacent 8235 is 438
+Adjacent 8247 is 439
+Adjacent 8248 is 440
+Adjacent 8249 is 441
+Adjacent 8470 is 442
+Adjacent 8475 is 443
+Adjacent 8480 is 444
+Adjacent 8482 is 445
+Adjacent 8494 is 446
+Adjacent 8495 is 447
+Adjacent 8522 is 448
+Adjacent 8524 is 449
+Adjacent 8525 is 450
+Adjacent 8537 is 451
+Adjacent 8538 is 452
+Adjacent 8550 is 453
+Adjacent 8551 is 454
+Adjacent 8590 is 455
+Adjacent 8591 is 456
+Adjacent 8603 is 457
+Adjacent 8615 is 458
+Adjacent 8627 is 459
+Adjacent 8632 is 460
+Adjacent 8637 is 461
+Adjacent 8664 is 462
+Adjacent 8665 is 463
+Adjacent 8704 is 464
+Adjacent 8716 is 465
+Adjacent 8868 is 466
+Adjacent 8870 is 467
+Adjacent 8871 is 468
+Adjacent 8873 is 469
+Adjacent 8900 is 470
+Adjacent 8912 is 471
+Adjacent 8914 is 472
+Adjacent 8916 is 473
+Adjacent 8917 is 474
+Adjacent 8929 is 475
+Adjacent 8930 is 476
+Adjacent 8931 is 477
+Adjacent 8943 is 478
+Adjacent 8944 is 479
+Adjacent 8956 is 480
+Adjacent 8973 is 481
+Adjacent 8974 is 482
+Adjacent 8975 is 483
+Adjacent 9214 is 484
+Adjacent 9215 is 485
+Adjacent 9216 is 486
+Adjacent 9228 is 487
+Adjacent 9229 is 488
+Adjacent 9231 is 489
+Adjacent 9248 is 490
+Adjacent 9249 is 491
+Adjacent 9250 is 492
+Adjacent 9251 is 493
+Adjacent 9348 is 494
+Adjacent 9349 is 495
+Adjacent 9388 is 496
+Adjacent 9389 is 497
+Adjacent 9416 is 498
+Adjacent 9417 is 499
+Adjacent 9418 is 500
+Adjacent 9419 is 501
+Adjacent 9420 is 502
+Adjacent 9659 is 503
+Adjacent 9660 is 504
+Adjacent 9661 is 505
+Adjacent 9673 is 506
+Adjacent 9674 is 507
+Adjacent 9732 is 508
+Adjacent 9759 is 509
+Adjacent 9760 is 510
+Adjacent 9761 is 511
+Adjacent 9762 is 512
+Adjacent 9763 is 513
+Adjacent 9764 is 514
+Adjacent 9791 is 515
+Adjacent 9793 is 516
+Adjacent 9989 is 517
+Adjacent 9991 is 518
+Adjacent 9992 is 519
+Adjacent 9993 is 520
+Adjacent 9994 is 521
+Adjacent 9995 is 522
+Adjacent 9996 is 523
+Adjacent 9997 is 524
+Adjacent 9998 is 525
+Adjacent 10010 is 526
+Adjacent 10068 is 527
+Adjacent 10069 is 528
+Adjacent 10070 is 529
+Adjacent 10114 is 530
+Adjacent 10489 is 531
+Adjacent 10490 is 532
+Adjacent 10491 is 533
+Adjacent 10518 is 534
+Adjacent 10557 is 535
+Adjacent 10559 is 536
+Adjacent 10571 is 537
+Adjacent 10598 is 538
+Adjacent 10599 is 539
+Adjacent 10626 is 540
+Adjacent 10696 is 541
+Adjacent 10697 is 542
+Adjacent 10724 is 543
+Adjacent 10725 is 544
+Adjacent 10726 is 545
+Adjacent 10727 is 546
+Adjacent 10754 is 547
+Adjacent 10766 is 548
+Adjacent 10767 is 549
+Adjacent 10772 is 550
+Adjacent 10799 is 551
+Adjacent 10811 is 552
+Adjacent 10838 is 553
+Adjacent 10839 is 554
+Adjacent 10866 is 555
+Adjacent 10932 is 556
+Adjacent 10959 is 557
+Adjacent 10971 is 558
+Adjacent 10972 is 559
+Adjacent 10973 is 560
+Adjacent 11005 is 561
+Adjacent 11007 is 562
+Adjacent 11077 is 563
+Adjacent 11078 is 564
+Adjacent 11080 is 565
+Adjacent 11107 is 566
+Adjacent 11108 is 567
+Adjacent 11109 is 568
+Adjacent 11110 is 569
+Adjacent 11137 is 570
+Adjacent 11139 is 571
+Adjacent 11151 is 572
+Adjacent 11178 is 573
+Adjacent 11183 is 574
+Adjacent 11185 is 575
+Adjacent 11187 is 576
+Adjacent 11219 is 577
+Adjacent 11220 is 578
+Adjacent 11221 is 579
+Adjacent 11291 is 580
+Adjacent 11292 is 581
+Adjacent 11304 is 582
+Adjacent 11305 is 583
+Adjacent 11306 is 584
+Adjacent 11333 is 585
+Adjacent 11334 is 586
+Adjacent 11346 is 587
+Adjacent 11351 is 588
+Adjacent 11383 is 589
+Adjacent 11410 is 590
+Adjacent 11412 is 591
+Adjacent 11424 is 592
+Adjacent 11429 is 593
+Adjacent 11581 is 594
+Adjacent 11583 is 595
+Adjacent 11736 is 596
+Adjacent 11737 is 597
+Adjacent 11749 is 598
+Adjacent 11776 is 599
+Adjacent 11803 is 600
+Adjacent 11842 is 601
+Adjacent 11869 is 602
+Adjacent 12022 is 603
+Adjacent 12023 is 604
+Adjacent 12035 is 605
+Adjacent 12036 is 606
+Adjacent 12048 is 607
+Adjacent 12050 is 608
+Adjacent 12052 is 609
+Adjacent 12204 is 610
+Adjacent 12205 is 611
+Adjacent 12210 is 612
+Adjacent 12211 is 613
+Adjacent 12212 is 614
+Adjacent 12239 is 615
+Adjacent 12309 is 616
+Adjacent 12326 is 617
+Adjacent 12331 is 618
+Adjacent 12358 is 619
+Adjacent 12370 is 620
+Adjacent 12372 is 621
+Adjacent 12373 is 622
+Adjacent 12412 is 623
+Adjacent 12424 is 624
+Adjacent 12429 is 625
+Adjacent 12468 is 626
+Adjacent 12473 is 627
+Adjacent 13430 is 628
+Adjacent 13447 is 629
+Adjacent 13448 is 630
+Adjacent 13600 is 631
+Adjacent 13617 is 632
+Adjacent 13629 is 633
+Adjacent 13641 is 634
+Adjacent 13642 is 635
+Adjacent 13681 is 636
+Adjacent 13708 is 637
+Adjacent 13805 is 638
+Adjacent 14044 is 639
+Adjacent 14076 is 640
+Adjacent 14077 is 641
+Adjacent 14104 is 642
+Adjacent 14116 is 643
+Adjacent 14128 is 644
+Adjacent 14130 is 645
+Adjacent 14326 is 646
+Adjacent 14327 is 647
+Adjacent 14339 is 648
+Adjacent 14340 is 649
+Adjacent 14352 is 650
+Adjacent 14353 is 651
+Adjacent 14600 is 652
+Adjacent 14617 is 653
+Adjacent 14683 is 654
+Adjacent 14780 is 655
+Adjacent 14781 is 656
+Adjacent 14820 is 657
+Adjacent 14847 is 658
+Adjacent 15000 is 659
+Adjacent 15032 is 660
+Adjacent 15037 is 661
+Adjacent 15049 is 662
+Adjacent 15076 is 663
+Adjacent 15614 is 664
+Adjacent 15615 is 665
+Adjacent 15627 is 666
+Adjacent 15654 is 667
+Adjacent 15751 is 668
+Adjacent 15790 is 669
+Adjacent 15802 is 670
+Adjacent 15863 is 671
+Adjacent 15868 is 672
+Adjacent 16115 is 673
+Adjacent 16362 is 674
+Adjacent 16757 is 675
+Adjacent 16796 is 676
+Adjacent 16808 is 677
+Adjacent 16820 is 678
+Adjacent 16847 is 679
+Adjacent 17000 is 680
+Adjacent 17153 is 681
+Adjacent 17165 is 682
+Adjacent 17192 is 683
+Adjacent 17204 is 684
+Adjacent 17205 is 685
+Adjacent 17600 is 686
+Adjacent 17658 is 687
+Adjacent 17660 is 688
+Adjacent 17757 is 689
+Adjacent 17759 is 690
+Adjacent 17771 is 691
+Adjacent 19728 is 692
+Adjacent 24848 is 693
+Adjacent 24887 is 694
+Adjacent 24914 is 695
+Adjacent 25219 is 696
+Adjacent 25220 is 697
+Adjacent 25221 is 698
+Adjacent 25842 is 699
+Adjacent 25881 is 700
+Adjacent 25893 is 701
+Next in stack is 701
+State 701 is going to be checked
+State 701 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 701
+Adjacent 0 is 743
+Adjacent 71 is 966
+Adjacent 73 is 1025
+Adjacent 146 is 1092
+Adjacent 207 is 1097
+Adjacent 213 is 1110
+Adjacent 214 is 1112
+Adjacent 272 is 1118
+Next in stack is 1118
+State 1118 is going to be checked
+State 1118 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1118
+Next in stack is 1112
+State 1112 is going to be checked
+State 1112 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1112
+Next in stack is 1110
+State 1110 is going to be checked
+State 1110 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1110
+Next in stack is 1097
+State 1097 is going to be checked
+State 1097 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1097
+Next in stack is 1092
+State 1092 is going to be checked
+State 1092 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1092
+Next in stack is 1025
+State 1025 is going to be checked
+State 1025 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1025
+Adjacent 8 is 1105
+Next in stack is 1105
+State 1105 is going to be checked
+State 1105 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 1105
+Next in stack is 966
+State 966 is going to be checked
+State 966 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 966
+Next in stack is 743
+State 743 is going to be checked
+State 743 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 743
+Next in stack is 700
+State 700 is going to be checked
+State 700 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 1 in state 700
+Adjacent 38 is 984
+Adjacent 46 is 1052
+Adjacent 83 is 1102
+Adjacent 88 is 1107
+Adjacent 90 is 1108
+Adjacent 91 is 1109
+Adjacent 93 is 1116
+Adjacent 372 is 1119
+Next in stack is 1119
+State 1119 is going to be checked
+State 1119 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return true because all agents have 0 demand in 1119
+State 1119 is a goal state with demand 2,2,2,2,2,2,0,1
+took 16.98 ms
+Path length: 12 leads to goal state 1119
+1. State 0
+ Actions none,req_r1,req_r1,req_r1,req_r2,req_r4,req_r1,req_r1,req_r3
+2. State 701
+ Actions none,idle,idle,idle,idle,req_r1,idle,idle,rel_r3
+3. State 1118
+ Actions undefined
+4. State 1112
+ Actions undefined
+5. State 1110
+ Actions undefined
+6. State 1097
+ Actions undefined
+7. State 1092
+ Actions undefined
+8. State 1025
+ Actions none,idle,idle,idle,req_r4,idle,idle,idle,relall
+9. State 1105
+ Actions undefined
+10. State 966
+ Actions undefined
+11. State 743
+ Actions undefined
+12. State 700
+ Actions none,idle,idle,idle,idle,rel_r4,idle,req_r1,idle
+13. State 1119
+Beginning heuristic search...
+First in stack is 0
+State 0 is going to be checked
+Entering isTowards
+		Setting currentDemand, should be first state only
+State 0 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 2 in state 0
+Adjacent 0 is 1
+Adjacent 1 is 2
+Adjacent 2 is 3
+Adjacent 3 is 4
+Adjacent 4 is 5
+Adjacent 6 is 6
+Adjacent 7 is 7
+Adjacent 19 is 8
+Adjacent 20 is 9
+Adjacent 21 is 10
+Adjacent 28 is 11
+Adjacent 33 is 12
+Adjacent 34 is 13
+Adjacent 35 is 14
+Adjacent 47 is 15
+Adjacent 48 is 16
+Adjacent 49 is 17
+Adjacent 50 is 18
+Adjacent 51 is 19
+Adjacent 52 is 20
+Adjacent 53 is 21
+Adjacent 54 is 22
+Adjacent 56 is 23
+Adjacent 57 is 24
+Adjacent 58 is 25
+Adjacent 59 is 26
+Adjacent 71 is 27
+Adjacent 72 is 28
+Adjacent 73 is 29
+Adjacent 74 is 30
+Adjacent 76 is 31
+Adjacent 77 is 32
+Adjacent 78 is 33
+Adjacent 79 is 34
+Adjacent 80 is 35
+Adjacent 81 is 36
+Adjacent 108 is 37
+Adjacent 110 is 38
+Adjacent 112 is 39
+Adjacent 113 is 40
+Adjacent 125 is 41
+Adjacent 127 is 42
+Adjacent 128 is 43
+Adjacent 129 is 44
+Adjacent 130 is 45
+Adjacent 131 is 46
+Adjacent 132 is 47
+Adjacent 137 is 48
+Adjacent 138 is 49
+Adjacent 139 is 50
+Adjacent 140 is 51
+Adjacent 167 is 52
+Adjacent 168 is 53
+Adjacent 180 is 54
+Adjacent 185 is 55
+Adjacent 186 is 56
+Adjacent 187 is 57
+Adjacent 189 is 58
+Adjacent 221 is 59
+Adjacent 222 is 60
+Adjacent 418 is 61
+Adjacent 420 is 62
+Adjacent 459 is 63
+Adjacent 471 is 64
+Adjacent 478 is 65
+Adjacent 483 is 66
+Adjacent 484 is 67
+Adjacent 486 is 68
+Adjacent 487 is 69
+Adjacent 489 is 70
+Adjacent 506 is 71
+Adjacent 508 is 72
+Adjacent 1129 is 73
+Adjacent 1131 is 74
+Adjacent 1132 is 75
+Adjacent 1134 is 76
+Adjacent 1135 is 77
+Adjacent 1136 is 78
+Adjacent 1138 is 79
+Adjacent 1139 is 80
+Adjacent 1171 is 81
+Adjacent 1172 is 82
+Adjacent 1184 is 83
+Adjacent 1186 is 84
+Adjacent 1187 is 85
+Adjacent 1188 is 86
+Adjacent 1189 is 87
+Adjacent 1191 is 88
+Adjacent 1192 is 89
+Adjacent 1193 is 90
+Adjacent 1251 is 91
+Adjacent 1253 is 92
+Adjacent 1254 is 93
+Adjacent 1255 is 94
+Adjacent 1256 is 95
+Adjacent 1258 is 96
+Adjacent 1260 is 97
+Adjacent 1261 is 98
+Adjacent 1262 is 99
+Adjacent 1263 is 100
+Adjacent 1264 is 101
+Adjacent 1265 is 102
+Adjacent 1266 is 103
+Adjacent 1267 is 104
+Adjacent 1268 is 105
+Adjacent 1269 is 106
+Adjacent 1271 is 107
+Adjacent 1272 is 108
+Adjacent 1277 is 109
+Adjacent 1278 is 110
+Adjacent 1279 is 111
+Adjacent 1280 is 112
+Adjacent 1281 is 113
+Adjacent 1282 is 114
+Adjacent 1283 is 115
+Adjacent 1285 is 116
+Adjacent 1286 is 117
+Adjacent 1287 is 118
+Adjacent 1288 is 119
+Adjacent 1289 is 120
+Adjacent 1290 is 121
+Adjacent 1291 is 122
+Adjacent 1292 is 123
+Adjacent 1293 is 124
+Adjacent 1310 is 125
+Adjacent 1311 is 126
+Adjacent 1312 is 127
+Adjacent 1313 is 128
+Adjacent 1315 is 129
+Adjacent 1316 is 130
+Adjacent 1328 is 131
+Adjacent 1329 is 132
+Adjacent 1330 is 133
+Adjacent 1342 is 134
+Adjacent 1369 is 135
+Adjacent 1370 is 136
+Adjacent 1409 is 137
+Adjacent 1410 is 138
+Adjacent 1411 is 139
+Adjacent 1423 is 140
+Adjacent 1424 is 141
+Adjacent 1425 is 142
+Adjacent 1426 is 143
+Adjacent 1470 is 144
+Adjacent 1471 is 145
+Adjacent 1472 is 146
+Adjacent 1499 is 147
+Adjacent 1500 is 148
+Adjacent 1502 is 149
+Adjacent 1503 is 150
+Adjacent 1504 is 151
+Adjacent 1531 is 152
+Adjacent 1532 is 153
+Adjacent 1533 is 154
+Adjacent 1534 is 155
+Adjacent 1535 is 156
+Adjacent 1537 is 157
+Adjacent 1539 is 158
+Adjacent 1544 is 159
+Adjacent 1545 is 160
+Adjacent 1546 is 161
+Adjacent 1573 is 162
+Adjacent 1575 is 163
+Adjacent 1576 is 164
+Adjacent 1578 is 165
+Adjacent 1579 is 166
+Adjacent 1581 is 167
+Adjacent 1582 is 168
+Adjacent 1583 is 169
+Adjacent 1595 is 170
+Adjacent 1596 is 171
+Adjacent 1598 is 172
+Adjacent 1600 is 173
+Adjacent 1601 is 174
+Adjacent 1602 is 175
+Adjacent 1603 is 176
+Adjacent 1604 is 177
+Adjacent 1606 is 178
+Adjacent 1607 is 179
+Adjacent 1608 is 180
+Adjacent 1609 is 181
+Adjacent 1610 is 182
+Adjacent 1637 is 183
+Adjacent 1876 is 184
+Adjacent 1881 is 185
+Adjacent 1883 is 186
+Adjacent 1890 is 187
+Adjacent 1902 is 188
+Adjacent 1941 is 189
+Adjacent 1942 is 190
+Adjacent 1947 is 191
+Adjacent 1948 is 192
+Adjacent 1949 is 193
+Adjacent 2188 is 194
+Adjacent 2189 is 195
+Adjacent 2216 is 196
+Adjacent 2217 is 197
+Adjacent 2219 is 198
+Adjacent 2246 is 199
+Adjacent 2247 is 200
+Adjacent 2248 is 201
+Adjacent 2249 is 202
+Adjacent 2254 is 203
+Adjacent 2266 is 204
+Adjacent 2293 is 205
+Adjacent 2294 is 206
+Adjacent 2296 is 207
+Adjacent 2297 is 208
+Adjacent 2298 is 209
+Adjacent 2299 is 210
+Adjacent 2326 is 211
+Adjacent 2327 is 212
+Adjacent 2339 is 213
+Adjacent 2340 is 214
+Adjacent 2341 is 215
+Adjacent 2342 is 216
+Adjacent 2343 is 217
+Adjacent 2345 is 218
+Adjacent 2346 is 219
+Adjacent 2498 is 220
+Adjacent 2499 is 221
+Adjacent 2501 is 222
+Adjacent 2571 is 223
+Adjacent 2572 is 224
+Adjacent 2573 is 225
+Adjacent 2580 is 226
+Adjacent 2581 is 227
+Adjacent 2582 is 228
+Adjacent 2599 is 229
+Adjacent 2600 is 230
+Adjacent 2601 is 231
+Adjacent 2628 is 232
+Adjacent 2640 is 233
+Adjacent 2642 is 234
+Adjacent 2643 is 235
+Adjacent 2645 is 236
+Adjacent 2646 is 237
+Adjacent 2647 is 238
+Adjacent 2648 is 239
+Adjacent 2649 is 240
+Adjacent 2654 is 241
+Adjacent 2659 is 242
+Adjacent 2661 is 243
+Adjacent 2666 is 244
+Adjacent 2667 is 245
+Adjacent 2679 is 246
+Adjacent 2681 is 247
+Adjacent 2682 is 248
+Adjacent 2687 is 249
+Adjacent 2699 is 250
+Adjacent 2760 is 251
+Adjacent 2761 is 252
+Adjacent 2778 is 253
+Adjacent 2779 is 254
+Adjacent 2780 is 255
+Adjacent 2781 is 256
+Adjacent 2783 is 257
+Adjacent 2784 is 258
+Adjacent 2785 is 259
+Adjacent 2787 is 260
+Adjacent 2788 is 261
+Adjacent 2789 is 262
+Adjacent 2941 is 263
+Adjacent 2943 is 264
+Adjacent 2944 is 265
+Adjacent 2971 is 266
+Adjacent 2972 is 267
+Adjacent 3030 is 268
+Adjacent 3031 is 269
+Adjacent 3058 is 270
+Adjacent 3059 is 271
+Adjacent 3060 is 272
+Adjacent 3065 is 273
+Adjacent 3072 is 274
+Adjacent 3133 is 275
+Adjacent 3134 is 276
+Adjacent 3141 is 277
+Adjacent 3142 is 278
+Adjacent 3143 is 279
+Adjacent 3182 is 280
+Adjacent 3183 is 281
+Adjacent 3195 is 282
+Adjacent 3196 is 283
+Adjacent 3198 is 284
+Adjacent 3215 is 285
+Adjacent 3242 is 286
+Adjacent 3247 is 287
+Adjacent 3264 is 288
+Adjacent 3265 is 289
+Adjacent 3266 is 290
+Adjacent 3278 is 291
+Adjacent 3305 is 292
+Adjacent 3306 is 293
+Adjacent 3307 is 294
+Adjacent 3308 is 295
+Adjacent 3320 is 296
+Adjacent 3321 is 297
+Adjacent 3348 is 298
+Adjacent 3350 is 299
+Adjacent 3351 is 300
+Adjacent 3352 is 301
+Adjacent 3353 is 302
+Adjacent 3365 is 303
+Adjacent 3370 is 304
+Adjacent 3371 is 305
+Adjacent 3372 is 306
+Adjacent 3399 is 307
+Adjacent 3404 is 308
+Adjacent 3406 is 309
+Adjacent 3433 is 310
+Adjacent 3477 is 311
+Adjacent 3489 is 312
+Adjacent 3491 is 313
+Adjacent 3523 is 314
+Adjacent 3530 is 315
+Adjacent 3562 is 316
+Adjacent 3867 is 317
+Adjacent 3879 is 318
+Adjacent 3911 is 319
+Adjacent 3912 is 320
+Adjacent 3913 is 321
+Adjacent 3983 is 322
+Adjacent 3984 is 323
+Adjacent 3985 is 324
+Adjacent 3986 is 325
+Adjacent 4013 is 326
+Adjacent 4040 is 327
+Adjacent 4041 is 328
+Adjacent 4596 is 329
+Adjacent 4597 is 330
+Adjacent 4609 is 331
+Adjacent 4636 is 332
+Adjacent 4663 is 333
+Adjacent 4665 is 334
+Adjacent 4666 is 335
+Adjacent 4667 is 336
+Adjacent 4694 is 337
+Adjacent 4721 is 338
+Adjacent 4728 is 339
+Adjacent 4735 is 340
+Adjacent 4887 is 341
+Adjacent 4888 is 342
+Adjacent 4900 is 343
+Adjacent 4927 is 344
+Adjacent 4928 is 345
+Adjacent 4955 is 346
+Adjacent 4957 is 347
+Adjacent 4958 is 348
+Adjacent 4963 is 349
+Adjacent 4975 is 350
+Adjacent 4992 is 351
+Adjacent 5004 is 352
+Adjacent 5009 is 353
+Adjacent 5010 is 354
+Adjacent 5011 is 355
+Adjacent 5016 is 356
+Adjacent 5017 is 357
+Adjacent 5018 is 358
+Adjacent 5019 is 359
+Adjacent 5020 is 360
+Adjacent 5078 is 361
+Adjacent 5079 is 362
+Adjacent 5106 is 363
+Adjacent 5108 is 364
+Adjacent 5120 is 365
+Adjacent 5159 is 366
+Adjacent 5171 is 367
+Adjacent 5172 is 368
+Adjacent 5173 is 369
+Adjacent 5174 is 370
+Adjacent 5191 is 371
+Adjacent 5192 is 372
+Adjacent 5219 is 373
+Adjacent 5220 is 374
+Adjacent 5232 is 375
+Adjacent 5853 is 376
+Adjacent 5854 is 377
+Adjacent 5859 is 378
+Adjacent 5860 is 379
+Adjacent 5861 is 380
+Adjacent 5900 is 381
+Adjacent 5905 is 382
+Adjacent 5906 is 383
+Adjacent 5933 is 384
+Adjacent 6030 is 385
+Adjacent 6410 is 386
+Adjacent 6411 is 387
+Adjacent 6423 is 388
+Adjacent 6428 is 389
+Adjacent 6429 is 390
+Adjacent 6430 is 391
+Adjacent 6431 is 392
+Adjacent 6432 is 393
+Adjacent 6444 is 394
+Adjacent 6456 is 395
+Adjacent 6461 is 396
+Adjacent 6493 is 397
+Adjacent 6520 is 398
+Adjacent 6521 is 399
+Adjacent 6522 is 400
+Adjacent 7472 is 401
+Adjacent 7473 is 402
+Adjacent 7474 is 403
+Adjacent 7479 is 404
+Adjacent 7491 is 405
+Adjacent 7492 is 406
+Adjacent 7494 is 407
+Adjacent 7521 is 408
+Adjacent 7522 is 409
+Adjacent 7527 is 410
+Adjacent 7528 is 411
+Adjacent 7529 is 412
+Adjacent 7530 is 413
+Adjacent 7600 is 414
+Adjacent 7670 is 415
+Adjacent 7671 is 416
+Adjacent 7673 is 417
+Adjacent 7731 is 418
+Adjacent 7736 is 419
+Adjacent 7737 is 420
+Adjacent 7749 is 421
+Adjacent 7776 is 422
+Adjacent 7875 is 423
+Adjacent 8114 is 424
+Adjacent 8141 is 425
+Adjacent 8142 is 426
+Adjacent 8143 is 427
+Adjacent 8144 is 428
+Adjacent 8171 is 429
+Adjacent 8172 is 430
+Adjacent 8173 is 431
+Adjacent 8175 is 432
+Adjacent 8177 is 433
+Adjacent 8209 is 434
+Adjacent 8221 is 435
+Adjacent 8233 is 436
+Adjacent 8234 is 437
+Adjacent 8235 is 438
+Adjacent 8247 is 439
+Adjacent 8248 is 440
+Adjacent 8249 is 441
+Adjacent 8470 is 442
+Adjacent 8475 is 443
+Adjacent 8480 is 444
+Adjacent 8482 is 445
+Adjacent 8494 is 446
+Adjacent 8495 is 447
+Adjacent 8522 is 448
+Adjacent 8524 is 449
+Adjacent 8525 is 450
+Adjacent 8537 is 451
+Adjacent 8538 is 452
+Adjacent 8550 is 453
+Adjacent 8551 is 454
+Adjacent 8590 is 455
+Adjacent 8591 is 456
+Adjacent 8603 is 457
+Adjacent 8615 is 458
+Adjacent 8627 is 459
+Adjacent 8632 is 460
+Adjacent 8637 is 461
+Adjacent 8664 is 462
+Adjacent 8665 is 463
+Adjacent 8704 is 464
+Adjacent 8716 is 465
+Adjacent 8868 is 466
+Adjacent 8870 is 467
+Adjacent 8871 is 468
+Adjacent 8873 is 469
+Adjacent 8900 is 470
+Adjacent 8912 is 471
+Adjacent 8914 is 472
+Adjacent 8916 is 473
+Adjacent 8917 is 474
+Adjacent 8929 is 475
+Adjacent 8930 is 476
+Adjacent 8931 is 477
+Adjacent 8943 is 478
+Adjacent 8944 is 479
+Adjacent 8956 is 480
+Adjacent 8973 is 481
+Adjacent 8974 is 482
+Adjacent 8975 is 483
+Adjacent 9214 is 484
+Adjacent 9215 is 485
+Adjacent 9216 is 486
+Adjacent 9228 is 487
+Adjacent 9229 is 488
+Adjacent 9231 is 489
+Adjacent 9248 is 490
+Adjacent 9249 is 491
+Adjacent 9250 is 492
+Adjacent 9251 is 493
+Adjacent 9348 is 494
+Adjacent 9349 is 495
+Adjacent 9388 is 496
+Adjacent 9389 is 497
+Adjacent 9416 is 498
+Adjacent 9417 is 499
+Adjacent 9418 is 500
+Adjacent 9419 is 501
+Adjacent 9420 is 502
+Adjacent 9659 is 503
+Adjacent 9660 is 504
+Adjacent 9661 is 505
+Adjacent 9673 is 506
+Adjacent 9674 is 507
+Adjacent 9732 is 508
+Adjacent 9759 is 509
+Adjacent 9760 is 510
+Adjacent 9761 is 511
+Adjacent 9762 is 512
+Adjacent 9763 is 513
+Adjacent 9764 is 514
+Adjacent 9791 is 515
+Adjacent 9793 is 516
+Adjacent 9989 is 517
+Adjacent 9991 is 518
+Adjacent 9992 is 519
+Adjacent 9993 is 520
+Adjacent 9994 is 521
+Adjacent 9995 is 522
+Adjacent 9996 is 523
+Adjacent 9997 is 524
+Adjacent 9998 is 525
+Adjacent 10010 is 526
+Adjacent 10068 is 527
+Adjacent 10069 is 528
+Adjacent 10070 is 529
+Adjacent 10114 is 530
+Adjacent 10489 is 531
+Adjacent 10490 is 532
+Adjacent 10491 is 533
+Adjacent 10518 is 534
+Adjacent 10557 is 535
+Adjacent 10559 is 536
+Adjacent 10571 is 537
+Adjacent 10598 is 538
+Adjacent 10599 is 539
+Adjacent 10626 is 540
+Adjacent 10696 is 541
+Adjacent 10697 is 542
+Adjacent 10724 is 543
+Adjacent 10725 is 544
+Adjacent 10726 is 545
+Adjacent 10727 is 546
+Adjacent 10754 is 547
+Adjacent 10766 is 548
+Adjacent 10767 is 549
+Adjacent 10772 is 550
+Adjacent 10799 is 551
+Adjacent 10811 is 552
+Adjacent 10838 is 553
+Adjacent 10839 is 554
+Adjacent 10866 is 555
+Adjacent 10932 is 556
+Adjacent 10959 is 557
+Adjacent 10971 is 558
+Adjacent 10972 is 559
+Adjacent 10973 is 560
+Adjacent 11005 is 561
+Adjacent 11007 is 562
+Adjacent 11077 is 563
+Adjacent 11078 is 564
+Adjacent 11080 is 565
+Adjacent 11107 is 566
+Adjacent 11108 is 567
+Adjacent 11109 is 568
+Adjacent 11110 is 569
+Adjacent 11137 is 570
+Adjacent 11139 is 571
+Adjacent 11151 is 572
+Adjacent 11178 is 573
+Adjacent 11183 is 574
+Adjacent 11185 is 575
+Adjacent 11187 is 576
+Adjacent 11219 is 577
+Adjacent 11220 is 578
+Adjacent 11221 is 579
+Adjacent 11291 is 580
+Adjacent 11292 is 581
+Adjacent 11304 is 582
+Adjacent 11305 is 583
+Adjacent 11306 is 584
+Adjacent 11333 is 585
+Adjacent 11334 is 586
+Adjacent 11346 is 587
+Adjacent 11351 is 588
+Adjacent 11383 is 589
+Adjacent 11410 is 590
+Adjacent 11412 is 591
+Adjacent 11424 is 592
+Adjacent 11429 is 593
+Adjacent 11581 is 594
+Adjacent 11583 is 595
+Adjacent 11736 is 596
+Adjacent 11737 is 597
+Adjacent 11749 is 598
+Adjacent 11776 is 599
+Adjacent 11803 is 600
+Adjacent 11842 is 601
+Adjacent 11869 is 602
+Adjacent 12022 is 603
+Adjacent 12023 is 604
+Adjacent 12035 is 605
+Adjacent 12036 is 606
+Adjacent 12048 is 607
+Adjacent 12050 is 608
+Adjacent 12052 is 609
+Adjacent 12204 is 610
+Adjacent 12205 is 611
+Adjacent 12210 is 612
+Adjacent 12211 is 613
+Adjacent 12212 is 614
+Adjacent 12239 is 615
+Adjacent 12309 is 616
+Adjacent 12326 is 617
+Adjacent 12331 is 618
+Adjacent 12358 is 619
+Adjacent 12370 is 620
+Adjacent 12372 is 621
+Adjacent 12373 is 622
+Adjacent 12412 is 623
+Adjacent 12424 is 624
+Adjacent 12429 is 625
+Adjacent 12468 is 626
+Adjacent 12473 is 627
+Adjacent 13430 is 628
+Adjacent 13447 is 629
+Adjacent 13448 is 630
+Adjacent 13600 is 631
+Adjacent 13617 is 632
+Adjacent 13629 is 633
+Adjacent 13641 is 634
+Adjacent 13642 is 635
+Adjacent 13681 is 636
+Adjacent 13708 is 637
+Adjacent 13805 is 638
+Adjacent 14044 is 639
+Adjacent 14076 is 640
+Adjacent 14077 is 641
+Adjacent 14104 is 642
+Adjacent 14116 is 643
+Adjacent 14128 is 644
+Adjacent 14130 is 645
+Adjacent 14326 is 646
+Adjacent 14327 is 647
+Adjacent 14339 is 648
+Adjacent 14340 is 649
+Adjacent 14352 is 650
+Adjacent 14353 is 651
+Adjacent 14600 is 652
+Adjacent 14617 is 653
+Adjacent 14683 is 654
+Adjacent 14780 is 655
+Adjacent 14781 is 656
+Adjacent 14820 is 657
+Adjacent 14847 is 658
+Adjacent 15000 is 659
+Adjacent 15032 is 660
+Adjacent 15037 is 661
+Adjacent 15049 is 662
+Adjacent 15076 is 663
+Adjacent 15614 is 664
+Adjacent 15615 is 665
+Adjacent 15627 is 666
+Adjacent 15654 is 667
+Adjacent 15751 is 668
+Adjacent 15790 is 669
+Adjacent 15802 is 670
+Adjacent 15863 is 671
+Adjacent 15868 is 672
+Adjacent 16115 is 673
+Adjacent 16362 is 674
+Adjacent 16757 is 675
+Adjacent 16796 is 676
+Adjacent 16808 is 677
+Adjacent 16820 is 678
+Adjacent 16847 is 679
+Adjacent 17000 is 680
+Adjacent 17153 is 681
+Adjacent 17165 is 682
+Adjacent 17192 is 683
+Adjacent 17204 is 684
+Adjacent 17205 is 685
+Adjacent 17600 is 686
+Adjacent 17658 is 687
+Adjacent 17660 is 688
+Adjacent 17757 is 689
+Adjacent 17759 is 690
+Adjacent 17771 is 691
+Adjacent 19728 is 692
+Adjacent 24848 is 693
+Adjacent 24887 is 694
+Adjacent 24914 is 695
+Adjacent 25219 is 696
+Adjacent 25220 is 697
+Adjacent 25221 is 698
+Adjacent 25842 is 699
+Adjacent 25881 is 700
+Adjacent 25893 is 701
+First in stack is 1
+State 701 is going to be checked
+Entering isTowards
+	Once off simultaneous goal selected
+		Entering isTowardsOOOG
+			Should return false because agent a7 has 2 vs 2 in state 701
+First in stack is 1
+State 700 is going to be checked
+Entering isTowards
+	Once off simultaneous goal selected
+		Entering isTowardsOOOG
+			Should return true because agent a7 has 1 vs 1 in state 700
+State 700 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return false because agent a6 has demand 1 in state 700
+Adjacent 37 is 966
+Adjacent 38 is 984
+Adjacent 46 is 1052
+Adjacent 80 is 1092
+Adjacent 82 is 1097
+Adjacent 83 is 1102
+Adjacent 88 is 1107
+Adjacent 90 is 1108
+Adjacent 91 is 1109
+Adjacent 92 is 1110
+Adjacent 93 is 1116
+Adjacent 372 is 1119
+First in stack is 1
+State 1119 is going to be checked
+Entering isTowards
+	Once off simultaneous goal selected
+		Entering isTowardsOOOG
+			Should return true because agent a7 has 0 vs 0 in state 1119
+State 1119 is added to the path
+Entering isFound
+	Once off simultaneous goal selected
+		Entering isFoundOOSG
+			Should return true because all agents have 0 demand in 1119
+State 1119 is a goal state with demand 2,2,2,2,2,2,0,1
+took 11.57 ms
+Path length: 2 leads to goal state 1119
+1. State 0
+ Actions none,idle,idle,req_r1,idle,req_r4,req_r1,req_r2,req_r3
+2. State 700
+ Actions none,idle,idle,idle,idle,rel_r4,idle,req_r1,idle
+3. State 1119
